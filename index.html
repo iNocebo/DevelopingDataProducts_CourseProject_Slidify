@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vancomycin Dose Adaption in Renal Insufficiency</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Vancomycin Dose Adaption in Renal Insufficiency">
+  <meta name="author" content="iNocebo - Dominik Staempfli">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="libraries/widgets/interactive/css/aceeditor.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Vancomycin Dose Adaption in Renal Insufficiency</h1>
+    <h2>Developing Data Products - Peer Assessment - Johns Hopkins at Coursera</h2>
+    <p>iNocebo - Dominik Staempfli<br/>devdataprod-034, November 2015</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>What is Vancomycin?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Vancomycin is a glycopeptide antibiotic used for severe bacterial infections </li>
+<li>It is known for being a last line treatment of Methicillin-resistant Staphylococcus aureus - also known as MRSA </li>
+</ul>
+
+<h3>Vancomycin dosing regimens need careful evaluation:</h3>
+
+<ul>
+<li>Dosing should be high enough to prevent the further spread of resistant bacteria </li>
+<li>Dosing should be low enough to prevent adverse drug reactions such as kidney damage, hearing impairment or rash </li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Why do we need an application for dosing Vancomycin</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Vancomycin elimination (read: &quot;pushing the drug out of the body&quot;) is heavily dependant on renal function </li>
+<li>Estimating the renal function of the patient is necessary to dose Vancomycin correctly and individually </li>
+<li>The renal function of a patient can be estimated when <em>sex</em>, <em>age</em>, <em>body weight</em> and <em>plasma Creatinine concentrations</em> are known</li>
+<li><p>Concentrations present in the patient&#39;s body can be estimated when renal function, dose and dosing intervals are known</p></li>
+<li><p><strong>An application performing quick and easy calculations will promote safer and more efficient Vancomycin use and may promote drug knowledge in a playful environment.</strong></p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Calculate your own distribution volume of Vancomycin right now!</h2>
+  </hgroup>
+  <article data-timings="">
+     
+<div class='row-fluid'>
+  <div class='span5'>
+    <form id="knitForm3" data-cell="3">
+      <div class="row-fluid">
+  <div class="col-sm-4">
+    <form class="well">
+      <div class="form-group shiny-input-container">
+        <label for="bw">Enter your body weight in kg:</label>
+        <input id="bw" type="number" class="form-control" value="70" min="5" max="140" step="1"/>
+      </div>
+    </form>
+  </div>
+  <div class="col-sm-8">
+    <p>Vancomycin would dilute itself in the following distribution volume [L] within your body: </p>
+    <pre id="odistr" class="shiny-text-output"></pre>
+  </div>
+</div>
+
+      <div id='aceeditor3' style="height:px;"></div>
+      <div class='interactive btn-toolbar pull-left'>
+        <div class='btn-group'>
+          <a class='btn btn-small action-button' id='runCode3' data-action='runCode'
+            data-cell='3' rel='tooltip' data-title='Run Code'>
+            <i class='icon-play'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='testCode3' data-action='testCode'
+             data-cell='3' rel='tooltip' data-title='Test Code'>
+            <i class='icon-check'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='clearResult3' data-action='clearResult'
+             data-cell='3' rel='tooltip' data-title='Clear Output'>
+            <i class="icon-remove"></i>
+          </a>
+          <a class='btn  btn-small iBtn' id='getHint3' rel='tooltip' 
+            data-title="Get Hint" data-action='getHint'
+            data-cell='3' data-hint="">
+            <i class="icon-bookmark"></i>
+          </a>
+        </div>
+      </div>    </form>
+  </div>
+  <div class='span7'>
+    <iframe id="knitResult3" class='shiny-html-output'></iframe>
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>The quiz to exit</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div class="quiz quiz-single well ">
+  <p>Who do you think would benefit from a Vancomycin dosing regimen calculator?</p>
+
+<ol>
+<li>A lawyer</li>
+<li><em>A physician</em></li>
+<li><em>A pharmacist</em></li>
+<li>A astronaut</li>
+</ol>
+
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  <button class="quiz-toggle-hint btn btn-info">Show Hint</button>
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear btn btn-danger">Clear</button>
+  
+  <div class="quiz-hint">
+  <p>Vancomycin is a dangerous drug, it should be used by healthcare professionals</p>
+
+</div>
+<div class="quiz-explanation">
+  <p>Physicians prescribe the dosing regimens but may be adviced by pharmacists while choosing it. Thank you for taking a look into my assigment!</p>
+
+</div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='What is Vancomycin?'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Why do we need an application for dosing Vancomycin'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Calculate your own distribution volume of Vancomycin right now!'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='The quiz to exit'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+<script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+<script src="libraries/widgets/interactive/js/ace/js/ace.js"></script>
+<script src="libraries/widgets/interactive/js/opencpu-0.5.js"></script>
+<script src="libraries/widgets/interactive/js/interactive.js"></script>
+
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
